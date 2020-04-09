@@ -3,7 +3,7 @@ const faker = require('faker');
 const colors = ['RED', 'GREEN', 'BLUE'];
 const ENV = require('../env')
 const usersCount = ENV.FAKE_USERS_COUNT;
-const inseringDocsCount = 50000;
+const inseringDocsCount = ENV.DOCS_INSERT_COUNT;
 const totalParts = Math.floor(usersCount / inseringDocsCount)
 
 insertingData().then((countDocuments) => {
@@ -20,7 +20,6 @@ async function insertingData() {
         if (i == totalParts) {
             limit = usersCount - (inseringDocsCount * (totalParts))
         }
-        console.log(limit)
         let generatedData = await generator(limit);
         await user.insertMany(generatedData);
     }

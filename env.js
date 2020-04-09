@@ -15,6 +15,9 @@ const env = envalid.cleanEnv(process.env, {
     }),
     FAKE_USERS_COUNT: num({
         default: 4000001
+    }),
+    DOCS_INSERT_COUNT: num({
+        default: 400000
     })
 })
 

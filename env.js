@@ -14,7 +14,7 @@ const env = envalid.cleanEnv(process.env, {
         default: 4000
     }),
     FAKE_USERS_COUNT: num({
-        default: 500
+        default: 4000001
     })
 })
 

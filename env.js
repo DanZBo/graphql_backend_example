@@ -17,7 +17,7 @@ const env = envalid.cleanEnv(process.env, {
         default: 4000001
     }),
     DOCS_INSERT_COUNT: num({
-        default: 400000
+        default: 100000
     })
 })
 

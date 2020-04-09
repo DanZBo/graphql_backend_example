@@ -25,6 +25,6 @@ nano .env
 
 ## Environments
 `FAKE_USERS_COUNT` - How much users do you need? Default value is `4000001`
-`DOCS_INSERT_COUNT` - How much users for one insert? Default value is `400000` 
+`DOCS_INSERT_COUNT` - How much users for one insert? Default value is `100000` 
 `SERVER_PORT` - default is `4000`
 `MONGO_URL` - default is `mongodb://mongo:27017/test`

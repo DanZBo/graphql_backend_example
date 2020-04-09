@@ -23,7 +23,7 @@ If you want set custom environments then you should create `.env` file and add n
 nano .env
 ```
 ## Examples
-###Query
+### Query
 ```
 {
   rating(page:1){

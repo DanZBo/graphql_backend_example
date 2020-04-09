@@ -22,6 +22,19 @@ If you want set custom environments then you should create `.env` file and add n
 ```
 nano .env
 ```
+## Examples
+###Query
+```
+{
+  rating(page:1){
+    name,
+    time,
+    speed,
+    color
+  }
+}
+```
+
 
 ## Environments
 `FAKE_USERS_COUNT` - How much users do you need? Default value is `4000001`
